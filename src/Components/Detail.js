@@ -68,7 +68,7 @@ img {
 const ImageTitle = styled.div`
 height: 30vh;
 width: 35vw;
-
+margin-top: 60px;
 img {
     width: 100%;
     height: 100%;
@@ -103,7 +103,7 @@ cursor: pointer;
 `
 
 const TrailerButton = styled(PlayButton)`
-background: rgba(0,0,0,0.3);
+background: rgba(0, 0, 0, 0.3);
 border: 1px solid rgb(249,249,249);
 color: rgb(249, 249, 249);
 
@@ -119,12 +119,15 @@ align-items: center;
 justify-content: center;
 border-radius: 50%;
 border: 2px solid white:
-background-color: rgba(0,0,0,0.6);
+background: rgba(0, 0, 0, 0.3);
 cursor: pointer; 
 span {
     font-size: 30px;
-    color: white;
-}
+    }
+
+    &:hover {
+        background: rgb(198, 198, 198);
+        }
 `
 
 
@@ -143,4 +146,5 @@ const Description = styled.div`
    font-size: 20px;
    margin-top: 16px;
    color: rgb(249, 249, 249);
+   max-width: 760px;
 `
